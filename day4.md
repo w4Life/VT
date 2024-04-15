@@ -31,6 +31,7 @@
         <br>
     7. **CMD và ENTRYPOINT**
         - Chỉ định các lệnh sẽ chạy khi container được khởi động. <code>cmd</code> có thể bị ghi đè còn <code>entrypoint</code> thì không.
+        - có thể buổi diễn dưới dạng command hoặc array
         <br>
 3. **Tư duy viết Dockerfile tối ưu**
     - **non root user**: Không sử dụng user root để triển khai dự án
