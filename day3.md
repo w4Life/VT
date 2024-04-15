@@ -24,6 +24,12 @@
             - <code> -t </code>: tuỳ chọn cho phép tạo một terminal cho docker
             - <code> -d </code>: tuỳ chọn để docker  run ở background
             - <code> -p host_port:docker_post </code>: tuỳ chọn để mở port 
+            - <code> -v host_folder:docker_folder </code>: tuỳ chọn để tạo ra liên kết giữa thư mục trên máy host và thư mục trong docker. bất cứ thay đổi nào 
+            trên thư mục trong docker sẽ được lưu trên thư mục ở host và ngược lại
+            - <code> -e ENV=VALUE </code>, tuỳ chọn để đặt biến môi trường cho container 
+        - <code>docker build [OPTIONS...] PATH </code>: build image từ dockerfile, PATH là đường dẫn đến Dockerfile
+            - <code> -t {name:tag} </code>: đặt tên cho image
+            - <code> -f {file} </code>: chỉ định Dockerfile để build image nếu thư mục có nhiều Dockerfile
         - <code>docker start [OPTIONS ...] {docker_container} {command} </code>: khởi động container được chỉ định. {docker_container} có thể là container id hoặc tên. 
         - <code>docker stop [OPTIONS ...] {docker_container} </code>: dừng container
         - <code>docker exec [OPTIONS ...] {docker_container} </code>: truy cập vào môi trường bên trong container.
@@ -33,6 +39,8 @@
             ví dụ: <code>docker exec -it ubuntu bash </code>
         - <code>docker rm {docker_container}</code>: xoá container. Sử dụng tuỳ chọn <code> -f </code> nếu container vẫn đang chạy, hoặc stop container nếu muốn xoá.
         - <code> docker rmi {docker_image}</code>: xoá image. tuỳ chọn <code> -f </code> để xoá image mà container của nó vẫn tồn tại, hoặc xoá container của image đó trước khi xoá nó.
+        - <code> docker inspect {container} </code>: xem thông tin chi tiết về một container được chỉ định
+        - <code> docker logs {container} </code>: xem log của container được chỉ định
 
         
 
