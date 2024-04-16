@@ -10,3 +10,6 @@
         - Quản lý các container liên quan
         <br>
     3. **Commands**
+    <br>
+
+    **Tham khảo**: [Docker Compose](https://docs.docker.com/compose/)
