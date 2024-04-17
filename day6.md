@@ -24,8 +24,7 @@
     - Khi cài đặt Docker, hệ thống file sẽ tự tạo thư mục <code>/var/lib/docker</code> để lưu trữ dữ liệu liên quan đến Docker.
     ![docker folder](/image/var_lib_docker.png)
     - **Docker Layerd Architecture**
-    <br>
-    ![Layered Architecture](./image/layer_architecture.png) <br>
+        ![Layered Architecture](./image/layer_architecture.png)
     - **Docker Volumes** 
         - Các Layer trong khi dựng image sẽ ở chế độ Read Only.
         - Layer khi chạy container sẽ ở chế độ Read Write. Các dữ liệu thay đổi trên container sẽ tách riêng với image, các dữ liệu này sẽ mất khi exit container hoặc xoá container.
