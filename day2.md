@@ -1,28 +1,29 @@
 # Ngày 2
 1. **Shell script**
     1. **Variables**
-        Tham khảo:
+        - Tham khảo:
         [Variables 1](https://www.shellscript.sh/variables1.html) [Variables 2]()       [Variables 3]()
         <br>
-        **Lưu ý 1: Scope of variables:**
-            Khi thực thi một file script, shell sẽ tạo ra một shell con để thực thi chương trình đó. Muốn shell con có thể kế thừa các giá trị của biến trong shell hiện tại, chúng ta dùng từ khoá <code>export</code>.
+        - **Lưu ý 1: Scope of variables:**
+            - Khi thực thi một file script, shell sẽ tạo ra một shell con để thực thi chương trình đó. Muốn shell con có thể kế thừa các giá trị của biến trong shell hiện tại, chúng ta dùng từ khoá <code>export</code>.
+            
+            - Shell con thực thi file script nếu có thay đổi đến biến môi trường của shell hiện tại sẽ chỉ có tác dụng trên môi trường của shell con. Nếu muốn thay đổi được lưu lại ở cả shell hiện tại, chúng ta sử dụng lệnh <code>.</code> (source). ví dụ: <code>. ./command.sh</code>. Lệnh source sẽ không tạo ra shell con để thực thi file chỉ định, chính vì thế chúng ta cũng không cần <code>export</code>
             <br>
-            Shell con thực thi file script nếu có thay đổi đến biến môi trường của shell hiện tại sẽ chỉ có tác dụng trên môi trường của shell con. Nếu muốn thay đổi được lưu lại ở cả shell hiện tại, chúng ta sử dụng lệnh <code>.</code> (source). ví dụ: <code>. ./command.sh</code>. Lệnh source sẽ không tạo ra shell con để thực thi file chỉ định, chính vì thế chúng ta cũng không cần <code>export</code>
+        - **Lưu ý 2: Biến dòng lệnh (Command-line arguments variables)**
+            - $1 ... $9: các tham số theo thứ tự khi nhập ở dòng lệnh
+            - $0: tên của chương trình
+            - $@: danh sách tất cả các tham số được truyền vào chương trình
+            - $#: số lượng tham số được truyền vào chương trình
+            - $?: exit value (== 0 nếu chạy tốt, != 0 nếu chạy lỗi)
+            - $$: PID của shell hiện tại
             <br>
-        **Lưu ý 2: Biến dòng lệnh (Command-line arguments variables)**
-        - $1 ... $9: các tham số theo thứ tự khi nhập ở dòng lệnh
-        - $0: tên của chương trình
-        - $@: danh sách tất cả các tham số được truyền vào chương trình
-        - $#: số lượng tham số được truyền vào chương trình
-        - $?: exit value (== 0 nếu chạy tốt, != 0 nếu chạy lỗi)
-        - $$: PID của shell hiện tại
-        <br>
-        **Lưu ý 3: IFS**
-        - IFS (Internal Field Separator) mặc định là SPACE, TAB, NEWLINE.
+        - **Lưu ý 3: IFS**
+            - IFS (Internal Field Separator) mặc định là SPACE, TAB, NEWLINE.
+            <br>
     2. **Wildcards:** dấu <code>*</code> - đại diện cho tất cả giá trị thích hợp
-        <br>
+    <br>
     3. **Escape characters**
-        <br>
+    <br>
     4. **Loops**
         - **for loop**
 
