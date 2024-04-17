@@ -25,7 +25,6 @@
     ![docker folder](/image/var_lib_docker.png)
     - **Docker Layerd Architecture**
     ![Layered Architecture](./image/layer_architecture.png)
-    <br>
     - **Docker Volumes** 
         - Các Layer trong khi dựng image sẽ ở chế độ Read Only.
         - Layer khi chạy container sẽ ở chế độ Read Write. Các dữ liệu thay đổi trên container sẽ tách riêng với image, các dữ liệu này sẽ mất khi exit container hoặc xoá container.
