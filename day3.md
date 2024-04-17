@@ -2,10 +2,10 @@
 
 1. **Container**
     - **Khái niệm**
-    Là một môi trường thực thi phần mềm độc lập và cô lập, bao gồm mã nguồn và các thư viện + tài nguyên cần thiết để chạy ứng dụng. Nói chung, container đơn giản hoá việc triển khai ứng dụng bằng cách đóng gói ứng dụng và tất cả các phụ thuộc của nó vào một môi trường độc lập.
-    <br>
-    Trong một môi trường container, ứng dụng chạy trong một môi trường cô lập với các container khác. Chúng có thể chia sẻ tài nguyên máy tính như CPU, RAM, ... với các ứng dụng trong container khác và với hệ thống máy chủ. Điều này giúp đảm bảo tính nhất quán và độ tin cậy của hệ thống
-    <br>
+        - Là một môi trường thực thi phần mềm độc lập và cô lập, bao gồm mã nguồn và các thư viện + tài nguyên cần thiết để chạy ứng dụng. Nói chung, container đơn giản hoá việc triển khai ứng dụng bằng cách đóng gói ứng dụng và tất cả các phụ thuộc của nó vào một môi trường độc lập.
+        <br>
+        - Trong một môi trường container, ứng dụng chạy trong một môi trường cô lập với các container khác. Chúng có thể chia sẻ tài nguyên máy tính như CPU, RAM, ... với các ứng dụng trong container khác và với hệ thống máy chủ. Điều này giúp đảm bảo tính nhất quán và độ tin cậy của hệ thống
+        <br>
 2. **Docker**
     1. **Khái niệm**
         Docker là một nền tảng ảo hoá giúp triển khai các container
