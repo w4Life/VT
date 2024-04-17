@@ -44,7 +44,7 @@
             - <code>[condition]</code> là điều kiện kiểm tra 
             - <code>commands</code> là các lệnh muốn thực hiện
             - lưu ý khoảng trắng giữa condition và []
-    Tham khảo: [Loops](https://www.shellscript.sh/loops.html)
+        Tham khảo: [Loops](https://www.shellscript.sh/loops.html)
     5. **Test and case**
         - **Test**
 
