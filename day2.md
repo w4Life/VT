@@ -1,9 +1,7 @@
 # Ngày 2
 1. **Shell script**
     1. **Variables**
-        - Tham khảo:
-        [Variables 1](https://www.shellscript.sh/variables1.html) [Variables 2]()       [Variables 3]()
-        <br>
+        - Tham khảo:[Variables 1](https://www.shellscript.sh/variables1.html) [Variables 2]()       [Variables 3]()
         - **Lưu ý 1: Scope of variables:**
             - Khi thực thi một file script, shell sẽ tạo ra một shell con để thực thi chương trình đó. Muốn shell con có thể kế thừa các giá trị của biến trong shell hiện tại, chúng ta dùng từ khoá <code>export</code>.
             
@@ -21,9 +19,7 @@
             - IFS (Internal Field Separator) mặc định là SPACE, TAB, NEWLINE.
             <br>
     2. **Wildcards:** dấu <code>*</code> - đại diện cho tất cả giá trị thích hợp
-    <br>
     3. **Escape characters**
-    <br>
     4. **Loops**
         - **for loop**
 
@@ -48,9 +44,7 @@
             - <code>[condition]</code> là điều kiện kiểm tra 
             - <code>commands</code> là các lệnh muốn thực hiện
             - lưu ý khoảng trắng giữa condition và []
-        <br>
     Tham khảo: [Loops](https://www.shellscript.sh/loops.html)
-    <br>
     5. **Test and case**
         - **Test**
 
@@ -75,7 +69,7 @@
                     *)
                         default_commands ;;
                 esac
-        <br>
+        
     6. **External Programs**
 
         1. <code>grep [option...] pattern [file...]</code> 
@@ -86,15 +80,15 @@
             2. <code> -f FILE, --file=FILE</code>: chỉ định tìm kiếm theo từng pattern trong file cụ thể (1 dòng trong file là một pattern)
             3. <code> -i --ignore-case</code>: không phân biệt chữ hoa, chữ thường
             4. <code> -v, --invert-match</code>: tìm kiếm các line không có pattern chỉ định
-            <br>
+            
         2. <code>cut [option...] file </code>: in ra phần được chỉ định trong mỗi dòng của file
             - <code> -d, --delimiter=DELIM</code>: sử dụng dấu phân cách chỉ định để phân tách file thay cho dấu phân cách mặc định (TAB)
             - <code> -f, --fields=LIST</code>: chỉ chọn các field được chỉ định, đồng thời in ra các dòng không có dấu phân cách (delimiter)
             - <code> -s, --only-delimitted</code>: không in ra các dòng mà không có delimiter
-            <br>
+            
     
     7. **Function**
-    <br>
+    
 2. **gawk**
     
 
