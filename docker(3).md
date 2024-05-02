@@ -3,7 +3,7 @@
 1. **Docker Engine**
     ![Docker Engine](./image/docker_engine.png)
     - Là một thành phần cốt lõi của Docker, đây là ứng dụng client-server mà mỗi máy tính chạy Docker sẽ chạy một instance của Docker Engine. Docker Engine cung cấp môi trường để quản lý các container. 
-        - **Docker Daemon**: là background process, chịu trách nhiệm quản lý các đối tượng trong Docker images, containers, volumes, networks.
+        - **Docker Daemon**: là background process, chịu trách nhiệm quản lý các đối tượng trong Docker: images, containers, volumes, networks.
         - **Docker REST API Server**: là API interface để Docker CLI có thể giao tiếp và đưa ra các chỉ thị cho Docker Daemon.
         - **Docker CLI**: là CLI để biểu diễn các hành động liên quan đến Docker như run, remove, .... CLI có thể remote từ máy khác
         <br>
