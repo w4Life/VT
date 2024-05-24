@@ -1,4 +1,4 @@
-# Ngày1
+# linux
 1. **Cron**
     1. **Định nghĩa**
         Là một chương trinh lập lịch dựa trên thời gian. Sử dụng lệnh <code>cron</code> để lập lịch, tạo các công việc tự động (cron jobs).
@@ -76,4 +76,23 @@
 3. **Network Command**
     - [Networking key concepts](https://ubuntu.com/server/docs/networking-key-concepts)
     - [Configuring networks](https://ubuntu.com/server/docs/configuring-networks)
+
+4. **Search, manipulate, ...**
+    1. **Search**: <code>find [path] [options] [expression]</code>
+        - <code> -name {name} </code>: tìm theo tên đối tượng 
+        - <code> -size {size} </code>: tìm theo kích cỡ. c - bytes, K - kilobytes, M - megabytes, G - gigabytes
+        - <code> -perm {permission} </code>: tìm theo phân quyền của đối tượng. ví dụ <code>sudo find /var/log/ -perm -g=w ! -perm /o=rw > /home/bob/data.txt</code>
+            - -perm -g=w: ít nhất có quyền w của group
+            - ! -perm /o=rw: others không có quyền r w
+    2. **sed, cut, sort, uniq, grep**
+    3. **regex expression**
+
+5. **Archive, Compress, Backup**
+    1. **Archive, Compress** : <code>tar</code> kết hợp cùng <code>gzip, bzip2, xzip</code>
+    2. **Backup**: chiến lược cơ bản - backup từ hệ thống này sang hệ thống khác
+        - rsync - remote synchronization
+        ![rsync](./image/remote%20synchronization.png)
+        - <code> rsync [options] {source} {dest} </code>
+        - ví dụ: <code>rsync -a . kmhai@1.1.1.1:/backups</code> 
+
     
