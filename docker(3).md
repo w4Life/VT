@@ -1,4 +1,4 @@
-**Ngày 6: Docker Engine, Docker Storage, Docker Network**
+### Docker Engine, Docker Storage, Docker Network 
 
 1. **Docker Engine**
     ![Docker Engine](./image/docker_engine.png)

@@ -1,4 +1,4 @@
-# Ngày 4: Docker (tiếp)
+# Docker (tiếp)
 
 1. **Dockerfile**
     Dockerfile là file văn bản có chứa các hướng dẫn để Docker xây dựng Docker image (bao gồm đóng gói sourc code, cài đặt các công cụ để chạy dự án)

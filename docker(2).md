@@ -1,4 +1,4 @@
-# Ngày 5: Docker (tiếp)
+# Docker (tiếp)
 
 1. **Docker Compose**
     1. **Khái niệm**

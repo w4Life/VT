@@ -1,4 +1,4 @@
-# Ngày 3: Docker
+# Docker
 
 1. **Container**
     - **Khái niệm**
