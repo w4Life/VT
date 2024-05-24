@@ -1,4 +1,4 @@
-# Ngày 2
+# shell scripts
 1. **Shell script**
     1. **Variables**
         - Tham khảo:[Variables 1](https://www.shellscript.sh/variables1.html) [Variables 2]()       [Variables 3]()
