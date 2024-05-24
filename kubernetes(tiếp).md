@@ -1,4 +1,4 @@
-# Ngày 8: k8s (tiếp)
+# k8s (tiếp)
 
 3. **k8s concepts** (tiếp)
     1. **Deployment**

@@ -1,4 +1,4 @@
-# Ngày 7: Kubernetes
+# Kubernetes
 1. **Container Orchestration**
     - **Container Orchestration** là quá trình tự động hoá việc triển khia, quản lý và mở rộng các container trên mạng lưới máy tính.
     - Một số tính năng:
@@ -57,9 +57,6 @@
         - Khác biệt:
             - **apiVersion**: <code>apps/v1</code> trong Replicaset so với <code>v1</code> trong Replication Controller
             - **Tính năng selector trong ReplicaSet**: Selector cho phép ReplicaSet có thể quản lí các PODs được định nghĩa từ trước đó bằng labels.
-    4. **Scale**: khi chúng ta muốn scale ứng dụng (tăng số lượng PODs):
-        - Thay đổi giá trị của trường <code>replicas</code> trong file định nghĩa
-        - sử dụng <code>kubectl scale --replicas={values} -f {replicas-defination}.yaml </code>
     
 ### Tham khảo: [Kubectl Cheat sheet](https://kubernetes.io/vi/docs/reference/kubectl/cheatsheet/#x%C3%B3a-t%C3%A0i-nguy%C3%AAn)
         
